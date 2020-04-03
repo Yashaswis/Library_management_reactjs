@@ -9,7 +9,7 @@ class AddBook extends Component {
             return{
                 BookName:'',
                 Edition:'',
-                Subject:'',
+                Author:'',
                 Date:'',
                 Price:''
             }
