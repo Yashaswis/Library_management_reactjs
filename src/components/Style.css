@@ -1,0 +1,32 @@
+  .buttons{
+    width: 100%;
+    background-color: #00b894;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .formate{
+    color:blueviolet;
+    border: 1px solid black;
+    background :#fff;
+    box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+    padding: 4px;
+  }
+  .format{
+    color:green;
+    border: 1px solid black;
+    background :#fff;
+    box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+    padding: 4px;
+    background-color: orchid;
+    margin: 8px 0;
+  }
+  .Table{
+    table-layout: fixed;
+    border-spacing: 0px;
+    background: #fff;
+    box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+  }
