@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import AddBook from './AddBook';
+import PaginationButtons from './pagination';
+
 import './Style.css';
+
 class ListBook extends Component {
     state = {
         currentIndex: -1,
@@ -67,6 +70,7 @@ class ListBook extends Component {
                         })}
                     </tbody>
                 </table>
+                <PaginationButtons />
             </div>
         );
     }
