@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AddBook from './AddBook';
+import PaginationButtons from './pagination';
 import './Style.css';
 class ListBook extends Component {
     state = {
@@ -41,32 +42,36 @@ class ListBook extends Component {
                 />
                 <hr />
                 <h3>List of books</h3>
-                <table className="Table" align="center" >
+                <div class="bs-example">
+                <table className="table table-striped table-dark" >
                     <thead>
                         <tr>
-                            <td className="format">Bookid</td>
-                            <td className="format">BookName</td> 
-                            <td className="format">Edition</td> 
-                            <td className="format">Author</td>
-                            <td className="format">Date</td>
-                            <td className="format">Price</td>
+                            <th >Bookid</th>
+                            <th >BookName</th> 
+                            <th>Edition</th> 
+                            <th >Author</th>
+                            <th >Date</th>
+                            <th >Amount</th>
                         </tr>
                     </thead>
                     <tbody>
                         {this.state.list.map((item, index) => {
                             return <tr key={index}>
-                                 <td className="formate">{index}</td>
-                                <td className="formate">{item.BookName}</td>
-                                <td className="formate">{item.Edition}</td>
-                                <td className="formate">{item.Author}</td>
-                                <td className="formate">{item.Date}</td>
-                                <td className="formate">{item.Price}</td>
+                                <td >{index}</td>
+                                <td >{item.BookName}</td>
+                                <td >{item.Edition}</td>
+                                <td>{item.Author}</td>
+                                <td >{item.Date}</td>
+                                <td >{item.Price}</td>
                                 <td><button className="buttons" onClick={() => this.handleEdit(index)}>Edit</button></td>
                                 <td><button className="buttons" onClick={() => this.handleDelete(index)}>Delete</button></td>
                             </tr>
                         })}
                     </tbody>
                 </table>
+                <PaginationButtons />
+            </div>
+
             </div>
         );
     }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import {Box,Button} from '@material-ui/core/';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -16,15 +16,21 @@ function Appbar(){
     return(
         <div>
             <div>
-            <h1>Library Management</h1>
+            {/* <h1>Library Management</h1> */}
             </div>
         <div className={classes.root}>
-        <AppBar position="static">
-            <Toolbar padding="0 0 0 20px" font="large">
-                <Button color="inherit">Home</Button>
+        <AppBar textAlign="center" position="static">
+        <Typography variant="h4"   >  
+          <Box textAlign='center' color='inherit' fontSize="30px">
+                   Library Management
+                </Box> 
+                <Box textAlign='left' color='orange' fontSize="large">
+                   HOME
+                </Box>    
+             </Typography> 
+                {/* 
                 <Button color="inherit">Addbook</Button>
-                <Button color="inherit">Listbook</Button>
-            </Toolbar>
+                <Button color="inherit">Listbook</Button> */}
       </AppBar>
     </div>
         </div>

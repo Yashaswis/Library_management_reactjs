@@ -38,3 +38,34 @@ h1{
     transform: rotate(360deg);
   }
 }
+.pagination {
+  border-radius: .25rem;
+  width: 50%;
+  margin: 1.5rem auto;
+  justify-content: space-around;
+}
+
+.perpageFilter{
+  display: flex;
+  min-width: 20%;
+  justify-content: space-evenly;
+}
+
+.currentPageItems--bold {
+  font-weight: 700;
+}
+
+.pagination__butons {
+  display: flex;
+}
+.pagination__butons.left, .pagination__butons.right {
+  outline: none;
+  display: inline-block;
+  color: inherit;
+  font-weight: 700;
+  padding: 3px;
+  margin-right: 10px;
+}
+.pagination__butons.left:hover, .pagination__butons.right:hover {
+  text-decoration: none;
+}
