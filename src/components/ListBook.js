@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import AddBook from './AddBook';
 import PaginationButtons from './pagination';
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe45ab4fb288d625acf1517b8825d2be3e466f94
 import './Style.css';
+
 class ListBook extends Component {
     state = {
         currentIndex: -1,
@@ -70,8 +75,11 @@ class ListBook extends Component {
                     </tbody>
                 </table>
                 <PaginationButtons />
+<<<<<<< HEAD
             </div>
 
+=======
+>>>>>>> fe45ab4fb288d625acf1517b8825d2be3e466f94
             </div>
         );
     }

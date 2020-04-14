@@ -19,4 +19,8 @@ export default function BPagination() {
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe45ab4fb288d625acf1517b8825d2be3e466f94

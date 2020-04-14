@@ -38,6 +38,10 @@ h1{
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe45ab4fb288d625acf1517b8825d2be3e466f94
 .pagination {
   border-radius: .25rem;
   width: 50%;
@@ -68,4 +72,8 @@ h1{
 }
 .pagination__butons.left:hover, .pagination__butons.right:hover {
   text-decoration: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe45ab4fb288d625acf1517b8825d2be3e466f94
